@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG new reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Suite">
+              <span class="suite-name border-passed">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Suite">
+                    <span>D:\himanshu\REST API(Workspace)\RestAssured\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">10 methods,   10 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.RestAssured.testCases.DELETE_1_Test" hash-for-method="Delete_1">Delete_1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.RestAssured.testCases.DELETE_2_Test" hash-for-method="Delete_2">Delete_2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.RestAssured.testCases.GET_1_Test" hash-for-method="checkGET">checkGET</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.RestAssured.testCases.GET_2_Test" hash-for-method="checkGETbyID">checkGETbyID</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.RestAssured.testCases.PATCH_1_Test" hash-for-method="patch_1">patch_1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.RestAssured.testCases.PATCH_2_Test" hash-for-method="patch_2">patch_2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.RestAssured.testCases.POST_1_Test" hash-for-method="post_1">post_1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.RestAssured.testCases.POST_2_Test" hash-for-method="post_2">post_2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.RestAssured.testCases.PUT_1_Test" hash-for-method="put_1">put_1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.RestAssured.testCases.PUT_2_Test" hash-for-method="put_2">put_2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.RestAssured.testCases.GET_1_Test</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkGET">
+                  </a> <!-- checkGET -->
+                  <span class="method-name">checkGET</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.RestAssured.testCases.PUT_2_Test</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="put_2">
+                  </a> <!-- put_2 -->
+                  <span class="method-name">put_2</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.RestAssured.testCases.DELETE_1_Test</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Delete_1">
+                  </a> <!-- Delete_1 -->
+                  <span class="method-name">Delete_1</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.RestAssured.testCases.PATCH_1_Test</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="patch_1">
+                  </a> <!-- patch_1 -->
+                  <span class="method-name">patch_1</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.RestAssured.testCases.PUT_1_Test</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="put_1">
+                  </a> <!-- put_1 -->
+                  <span class="method-name">put_1</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.RestAssured.testCases.POST_2_Test</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="post_2">
+                  </a> <!-- post_2 -->
+                  <span class="method-name">post_2</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.RestAssured.testCases.DELETE_2_Test</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Delete_2">
+                  </a> <!-- Delete_2 -->
+                  <span class="method-name">Delete_2</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.RestAssured.testCases.GET_2_Test</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkGETbyID">
+                  </a> <!-- checkGETbyID -->
+                  <span class="method-name">checkGETbyID</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.RestAssured.testCases.POST_1_Test</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="post_1">
+                  </a> <!-- post_1 -->
+                  <span class="method-name">post_1</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.RestAssured.testCases.PATCH_2_Test</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="patch_2">
+                  </a> <!-- patch_2 -->
+                  <span class="method-name">patch_2</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">D:\himanshu\REST API(Workspace)\RestAssured\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Suite&quot;&gt;
+  &lt;test name=&quot;Test&quot; preserve-order=&quot;true&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.RestAssured.testCases.GET_1_Test&quot;/&gt;
+      &lt;class name=&quot;com.RestAssured.testCases.GET_2_Test&quot;/&gt;
+      &lt;class name=&quot;com.RestAssured.testCases.POST_1_Test&quot;/&gt;
+      &lt;class name=&quot;com.RestAssured.testCases.POST_2_Test&quot;/&gt;
+      &lt;class name=&quot;com.RestAssured.testCases.DELETE_1_Test&quot;/&gt;
+      &lt;class name=&quot;com.RestAssured.testCases.DELETE_2_Test&quot;/&gt;
+      &lt;class name=&quot;com.RestAssured.testCases.PUT_1_Test&quot;/&gt;
+      &lt;class name=&quot;com.RestAssured.testCases.PUT_2_Test&quot;/&gt;
+      &lt;class name=&quot;com.RestAssured.testCases.PATCH_1_Test&quot;/&gt;
+      &lt;class name=&quot;com.RestAssured.testCases.PATCH_2_Test&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Test (10 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(10);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'checkGET')
+data.setCell(0, 2, 'com.RestAssured.testCases.GET_1_Test')
+data.setCell(0, 3, 5875);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'Delete_1')
+data.setCell(1, 2, 'com.RestAssured.testCases.DELETE_1_Test')
+data.setCell(1, 3, 5829);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'put_2')
+data.setCell(2, 2, 'com.RestAssured.testCases.PUT_2_Test')
+data.setCell(2, 3, 5248);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'Delete_2')
+data.setCell(3, 2, 'com.RestAssured.testCases.DELETE_2_Test')
+data.setCell(3, 3, 5227);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'patch_1')
+data.setCell(4, 2, 'com.RestAssured.testCases.PATCH_1_Test')
+data.setCell(4, 3, 5190);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'patch_2')
+data.setCell(5, 2, 'com.RestAssured.testCases.PATCH_2_Test')
+data.setCell(5, 3, 5190);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'put_1')
+data.setCell(6, 2, 'com.RestAssured.testCases.PUT_1_Test')
+data.setCell(6, 3, 5156);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'post_1')
+data.setCell(7, 2, 'com.RestAssured.testCases.POST_1_Test')
+data.setCell(7, 3, 4976);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'post_2')
+data.setCell(8, 2, 'com.RestAssured.testCases.POST_2_Test')
+data.setCell(8, 3, 4182);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'checkGETbyID')
+data.setCell(9, 2, 'com.RestAssured.testCases.GET_2_Test')
+data.setCell(9, 3, 4158);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 51 seconds</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">18 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.RestAssured.testCases.PUT_2_Test</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">reportSetUp</span>
+                <br/>
+                <span class="ignored-method-name">reportClosing</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.RestAssured.testCases.DELETE_1_Test</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">reportSetUp</span>
+                <br/>
+                <span class="ignored-method-name">reportClosing</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.RestAssured.testCases.PATCH_1_Test</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">reportSetUp</span>
+                <br/>
+                <span class="ignored-method-name">reportClosing</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.RestAssured.testCases.PUT_1_Test</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">reportSetUp</span>
+                <br/>
+                <span class="ignored-method-name">reportClosing</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.RestAssured.testCases.POST_2_Test</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">reportSetUp</span>
+                <br/>
+                <span class="ignored-method-name">reportClosing</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.RestAssured.testCases.GET_2_Test</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">reportClosing</span>
+                <br/>
+                <span class="ignored-method-name">reportSetUp</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.RestAssured.testCases.DELETE_2_Test</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">reportClosing</span>
+                <br/>
+                <span class="ignored-method-name">reportSetUp</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.RestAssured.testCases.POST_1_Test</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">reportClosing</span>
+                <br/>
+                <span class="ignored-method-name">reportSetUp</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.RestAssured.testCases.PATCH_2_Test</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">reportSetUp</span>
+                <br/>
+                <span class="ignored-method-name">reportClosing</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.RestAssured.testCases.GET_1_Test</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">reportSetUp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="test-method">
+                <span class="method-name">checkGET</span>
+                <span class="method-start">226 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.RestAssured.testCases.GET_2_Test</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">checkGETbyID</span>
+                <span class="method-start">6103 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.RestAssured.testCases.POST_1_Test</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">post_1</span>
+                <span class="method-start">10263 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.RestAssured.testCases.POST_2_Test</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">post_2</span>
+                <span class="method-start">15240 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.RestAssured.testCases.DELETE_1_Test</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">Delete_1</span>
+                <span class="method-start">19423 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.RestAssured.testCases.DELETE_2_Test</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">Delete_2</span>
+                <span class="method-start">25253 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.RestAssured.testCases.PUT_1_Test</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">put_1</span>
+                <span class="method-start">30483 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.RestAssured.testCases.PUT_2_Test</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">put_2</span>
+                <span class="method-start">35640 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.RestAssured.testCases.PATCH_1_Test</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">patch_1</span>
+                <span class="method-start">40889 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.RestAssured.testCases.PATCH_2_Test</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">patch_2</span>
+                <span class="method-start">46079 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.RestAssured.testCases.GET_1_Test</div> <!-- chronological-class-name -->
+              <div class="configuration-suite after">
+                <span class="method-name">reportClosing</span>
+                <span class="method-start">51292 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

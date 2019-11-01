@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <test name="Test(failed)" preserve-order="true">
+    <classes>
+      <class name="com.RestAssured.testCases.PATCH_1_Test">
+        <methods>
+          <include name="reportSetUp"/>
+          <include name="reportClosing"/>
+        </methods>
+      </class> <!-- com.RestAssured.testCases.PATCH_1_Test -->
+      <class name="com.RestAssured.testCases.GET_1_Test">
+        <methods>
+          <include name="checkGET"/>
+        </methods>
+      </class> <!-- com.RestAssured.testCases.GET_1_Test -->
+      <class name="com.RestAssured.testCases.DELETE_2_Test">
+        <methods>
+          <include name="Delete_2"/>
+        </methods>
+      </class> <!-- com.RestAssured.testCases.DELETE_2_Test -->
+      <class name="com.RestAssured.testCases.DELETE_1_Test">
+        <methods>
+          <include name="Delete_1"/>
+        </methods>
+      </class> <!-- com.RestAssured.testCases.DELETE_1_Test -->
+      <class name="com.RestAssured.testCases.PUT_2_Test">
+        <methods>
+          <include name="put_2"/>
+        </methods>
+      </class> <!-- com.RestAssured.testCases.PUT_2_Test -->
+      <class name="com.RestAssured.testCases.GET_2_Test">
+        <methods>
+          <include name="checkGETbyID"/>
+        </methods>
+      </class> <!-- com.RestAssured.testCases.GET_2_Test -->
+      <class name="com.RestAssured.testCases.PATCH_2_Test">
+        <methods>
+          <include name="patch_2"/>
+        </methods>
+      </class> <!-- com.RestAssured.testCases.PATCH_2_Test -->
+      <class name="com.RestAssured.testCases.PUT_1_Test">
+        <methods>
+          <include name="put_1"/>
+        </methods>
+      </class> <!-- com.RestAssured.testCases.PUT_1_Test -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

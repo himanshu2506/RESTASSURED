@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Failed suite [RestAssuredTest]" parallel="tests">
+  <test name="GET_1(failed)" parallel="tests" preserve-order="true">
+    <classes>
+      <class name="com.RestAssured.testCases.GET_1_Test">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="reportSetUp"/>
+          <include name="reportClosing"/>
+          <include name="get"/>
+        </methods>
+      </class> <!-- com.RestAssured.testCases.GET_1_Test -->
+      <class name="com.RestAssured.testCases.GET_2_Test">
+        <methods>
+          <include name="setUp"/>
+          <include name="get"/>
+          <include name="tearDown"/>
+          <include name="checkGETbyID"/>
+        </methods>
+      </class> <!-- com.RestAssured.testCases.GET_2_Test -->
+    </classes>
+  </test> <!-- GET_1(failed) -->
+</suite> <!-- Failed suite [RestAssuredTest] -->

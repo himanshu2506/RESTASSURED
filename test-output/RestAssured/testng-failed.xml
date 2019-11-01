@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [RestAssured]">
+  <test name="TestNG Packages Test(failed)" preserve-order="true">
+    <classes>
+      <class name="com.RestAssured.testCases.POST_Test">
+        <methods>
+          <include name="setUp"/>
+          <include name="post"/>
+          <include name="checkPOST_1"/>
+          <include name="checkPOST_2"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.RestAssured.testCases.POST_Test -->
+      <class name="com.RestAssured.testCases.PATCH_1_Test">
+        <methods>
+          <include name="setUp"/>
+          <include name="patch"/>
+          <include name="tearDown"/>
+          <include name="reportSetUp"/>
+          <include name="reportClosing"/>
+        </methods>
+      </class> <!-- com.RestAssured.testCases.PATCH_1_Test -->
+      <class name="com.RestAssured.testCases.DELETE_1_Test">
+        <methods>
+          <include name="setUp"/>
+          <include name="post"/>
+          <include name="Delete_1"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.RestAssured.testCases.DELETE_1_Test -->
+      <class name="com.RestAssured.testCases.PUT_1_Test">
+        <methods>
+          <include name="setUp"/>
+          <include name="put_1"/>
+          <include name="patch"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.RestAssured.testCases.PUT_1_Test -->
+      <class name="com.RestAssured.testCases.PUT_2_Test">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="put_2"/>
+          <include name="patch"/>
+        </methods>
+      </class> <!-- com.RestAssured.testCases.PUT_2_Test -->
+      <class name="com.RestAssured.testCases.PATCH_2_Test">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="patch_2"/>
+          <include name="patch"/>
+        </methods>
+      </class> <!-- com.RestAssured.testCases.PATCH_2_Test -->
+      <class name="com.RestAssured.testCases.GET_2_Test">
+        <methods>
+          <include name="setUp"/>
+          <include name="get"/>
+          <include name="tearDown"/>
+          <include name="checkGETbyID"/>
+        </methods>
+      </class> <!-- com.RestAssured.testCases.GET_2_Test -->
+      <class name="com.RestAssured.testCases.GET_1_Test">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="checkGET"/>
+          <include name="get"/>
+        </methods>
+      </class> <!-- com.RestAssured.testCases.GET_1_Test -->
+      <class name="com.RestAssured.testCases.DELETE_2_Test">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="Delete_2"/>
+          <include name="post"/>
+        </methods>
+      </class> <!-- com.RestAssured.testCases.DELETE_2_Test -->
+    </classes>
+  </test> <!-- TestNG Packages Test(failed) -->
+</suite> <!-- Failed suite [RestAssured] -->
